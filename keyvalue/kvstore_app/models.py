@@ -6,7 +6,7 @@ from django.db import models
 
 class KeyValueStore(models.Model):
     key = models.CharField(max_length = 100)
-    value = models.JSONField()
+    value = models.BigIntegerField
     expires_at = models.DateTimeField()
 
     def __str__(self):
